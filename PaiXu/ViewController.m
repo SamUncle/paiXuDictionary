@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     //思路：首先将数组中的字符串取出，截取字符串，取出数字，用冒泡排序法排序好后再拼接字符串，然后放到字典（自定义的有序的字典）。这样就完成了对一个数组中的字符串排序到有序字典中。    
     NSMutableArray * array = [NSMutableArray arrayWithObjects:@"123b_22",@"123b_34",@"123b_78",@"123b_6",@"123b_8",@"123b_23", nil];
     //创建一个装数字的字典
@@ -52,7 +53,7 @@
         
         [dic setObject:newStr forKey:[NSNumber numberWithInt:i]];
     }
-   NSString * xuStr = [youxus componentsJoinedByString:@","];
+    NSString * xuStr = [youxus componentsJoinedByString:@","];
     //打印拼接好的字符串
     NSLog(@"xuStr %@",xuStr);
     //打印需要的字典
