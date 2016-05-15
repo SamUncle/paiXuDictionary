@@ -1,1 +1,2 @@
 # paiXuDictionary
+加了cocoapods
